@@ -1,4 +1,4 @@
-alert ("Hola mundo ostiassss jeje");
+//alert ("Hola mundo ostiassss jeje");
 
 //let es una variable como var en css 
 let nombre = "Simon";
@@ -56,3 +56,11 @@ console.log(texto.length); //esto es para saber los caracteres incluyendo espaci
 
 console.log(texto.toLowerCase()); // poner todas en minuscula y hay que poner los parentesis porque es una funcion
 console.log(texto.toUpperCase()); // te los pone todo en mayuscula
+
+
+
+
+let nombreVer = "Simón ";
+let apellidoVer = "Lavdorenko";
+let edad = 30;
+console.log(nombreVer+apellidoVer + " tiene " + edad);
