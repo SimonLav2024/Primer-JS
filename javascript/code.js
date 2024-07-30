@@ -63,4 +63,14 @@ console.log(texto.toUpperCase()); // te los pone todo en mayuscula
 let nombreVer = "Simón ";
 let apellidoVer = "Lavdorenko";
 let edad = 30;
-console.log(nombreVer+apellidoVer + " tiene " + edad);
+console.log(nombreVer+apellidoVer + " tiene " + edad + " años");
+
+//template string
+console.log(`${nombreVer} ${apellidoVer} tiene ${edad} años`); // esto es lo mismo que antes pero es como mas comodo aunk comodo no se yo pero bueno es saberlo
+
+let poema = `Córdoba lejana y sola
+jaca negra luna grande y aceitunas en mi alforja
+aunque sepa los caminos yo nunca llegaré a Córdoba
+por el llano por el viento
+jaca negra, luna roja...`;
+console.log(poema); //esto es un ejemplo como meter en una variable saltos de linea gracias a las comillas invertidas(es simplemente poner el texto entre comillas y escribir dandole al enter siempre que quieras dar un salto de linea)
