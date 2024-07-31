@@ -21,7 +21,11 @@ function calcularEdad() {
         mensaje = "Los datos introducidos no son correctos";
     }
     document.getElementById("resultado").textContent = mensaje;
-    
+}
+function limpiarq() { 
+    document.getElementById("nombreMascota").value = "";
+    document.getElementById("edadMascota").value = "";
+    document.getElementById("resultado").textContent = "";
 }
 
 //fin
@@ -51,6 +55,11 @@ function calcularPrecio() {
     }
     document.getElementById("result").textContent = mens;
 }
+function limpiart() { 
+    document.getElementById("nombreCliente").value = "";
+    document.getElementById("precioSinIVA").value = "";
+    document.getElementById("result").textContent = "";
+}
 
 //fin
 
@@ -75,6 +84,10 @@ function calc() {
         mens = "Los valores introducidos deben ser positivos"
     }
     document.getElementById("valFin").textContent = mens;
+}
+function limpiars() { 
+    document.getElementById("conIVA").value = "";
+    document.getElementById("valFin").textContent = "";
 }
 
 //fin
