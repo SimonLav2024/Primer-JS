@@ -15,9 +15,23 @@
 
     <h1>Calculadora de Precios con IVA</h1>
     <input type="text" id="nombreCliente" placeholder="Nombre del Cliente"> <input type="text" id="precioSinIVA" placeholder="Precio sin IVA">
+    <label for="tipo">
+        <input type="checkbox" id="IVAred">
+        IVA reducido
+    </label>
 
     <button onclick="calcularPrecio()">Calcular Precio</button>
     <p id="result"></p>
+
+    <h1>Calculadora de precio sin IVA</h1>
+    <input type="text" id="conIVA" placeholder="Precio con IVA">
+    <label for="">
+        <input type="checkbox" id="IVA10">
+        IVA Reducido
+    </label>
+
+    <button onclick="calc()">Calcular sin IVA</button>
+    <p id="valFin"></p>
 
     <script src="javascript/code2.js"></script>
 </body>
