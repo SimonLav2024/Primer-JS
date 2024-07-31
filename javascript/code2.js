@@ -109,6 +109,6 @@ function dividir() {
 function limpiar() { 
     document.getElementById("no1").value = "";
     document.getElementById("no2").value = "";
-    document.getElementById("respuesta").textContent = ""; //aque es .textContent por que el id esta en la etiqueta p que es parrafo
+    document.getElementById("respuesta").textContent = ""; //aque es .textContent por que el id esta en la etiqueta p que es parrafo .value es para los input
 }
 // fin
