@@ -1,3 +1,5 @@
+//Calculadora de la edad de la mascota
+
 function calcularEdad() {
     //esto es para obtener el nombre de la mascota
     let nombre = document.getElementById("nombreMascota").value;
@@ -21,6 +23,10 @@ function calcularEdad() {
     document.getElementById("resultado").textContent = mensaje;
     
 }
+
+//fin
+
+//Calculadora del precio son iva
 
 function calcularPrecio() {
     let nomCliente = document.getElementById("nombreCliente").value;
@@ -46,6 +52,10 @@ function calcularPrecio() {
     document.getElementById("result").textContent = mens;
 }
 
+//fin
+
+//Calculadora de precio sin IVA
+
 function calc() {
     let precioconIVA = document.getElementById("conIVA").value;
     let cbSelect = document.getElementById("IVA10").checked;
@@ -58,10 +68,47 @@ function calc() {
             IVA = 10;
         }
         let valFin = precioconIVA - (precioconIVA*IVA/100);
+        valFin = valFin.toFixed(2);
         mens = `El precio sin IVA es ${valFin}`;
+        
     }else{
         mens = "Los valores introducidos deben ser positivos"
     }
-    
     document.getElementById("valFin").textContent = mens;
 }
+
+//fin
+
+//calculadora
+
+function sumar() {
+    let numero1 = Number(document.getElementById("no1").value);
+    let numero2 = Number(document.getElementById("no2").value);
+    let resultado = numero1 + numero2;
+    document.getElementById("respuesta").textContent = resultado;
+}
+function restar() {
+    let numero1 = Number(document.getElementById("no1").value);
+    let numero2 = Number(document.getElementById("no2").value);
+    let resultado = numero1 - numero2;
+    document.getElementById("respuesta").textContent = resultado;
+}
+function multiplicar() {
+    let numero1 = Number(document.getElementById("no1").value);
+    let numero2 = Number(document.getElementById("no2").value);
+    let resultado = numero1 * numero2;
+    document.getElementById("respuesta").textContent = resultado;
+}
+function dividir() {
+    let numero1 = Number(document.getElementById("no1").value);
+    let numero2 = Number(document.getElementById("no2").value);
+    let resultado = numero1 / numero2;
+    document.getElementById("respuesta").textContent = resultado;
+}
+
+function limpiar() { 
+    document.getElementById("no1").value = "";
+    document.getElementById("no2").value = "";
+    document.getElementById("respuesta").textContent = ""; //aque es .textContent por que el id esta en la etiqueta p que es parrafo
+}
+// fin
