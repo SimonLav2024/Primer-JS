@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+#calculadora {
+    background-color: rgba(0, 255, 255, 0.658);
+    padding: 4rem;
+    border-style: double;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20rem 0 20rem;
+
+
+}
