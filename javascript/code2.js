@@ -53,10 +53,15 @@ function calc() {
     mens = "";
     let IVA = 21;
     
-    if(cbSelect){
-       IVA = 10;
+    if(precioconIVA >= 0){
+        if(cbSelect){
+            IVA = 10;
+        }
+        let valFin = precioconIVA - (precioconIVA*IVA/100);
+        mens = `El precio sin IVA es ${valFin}`;
+    }else{
+        mens = "Los valores introducidos deben ser positivos"
     }
-    let valFin = precioconIVA - (precioconIVA*IVA/100);
-    mens = `El precio sin IVA es ${valFin}`;
+    
     document.getElementById("valFin").textContent = mens;
 }
